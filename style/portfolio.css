@@ -1,52 +1,56 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .font-open-sans{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Open Sans", sans-serif;
 }
+
 
 .logo h2{
     color: #181818;
     font-size: 45px;
     font-weight: 900;
-    
 }
 
 .color-orange{
     color: #FD6E0A;
 }
 
-nav .manu{
-    display: flex;
-    list-style-type: none;
-    gap: 51px;
-    align-items: center;
-}
 
 header{
-    background-color: #FFFFFF;
-    padding: 50px;
+    background-color: #fcf4f8;
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    padding: 0;
 }
 
 nav{
-    width: 71%;
-    max-width: 1140;
-    align-items: center;
-    margin: 0px auto;
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
-nav .manu a{
+nav .menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+nav .menu a{
     font-size: 20px;
     color: #474747;
     text-decoration: none;
-   
 }
+
 
 .btn{
     background-color: #FD6E0A;
@@ -54,6 +58,47 @@ nav .manu a{
     font-size: 20px;
     padding: 18px 35px;
     border-radius: 5px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#banner{
+   
+    
+    margin: 47px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .banner-content{
+    max-width: 585px;
+}
+
+#banner .banner-content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+}
+#banner .banner-content h1{
+    font-size: 85px;
     font-weight: bold;
-    color: white;
+    color: #181818;
+    margin-bottom: 20px;
+
+}
+#banner .banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#banner .banner-image img{
+    max-width: 585px;
+    vertical-align: middle;
+   display: block;
 }
